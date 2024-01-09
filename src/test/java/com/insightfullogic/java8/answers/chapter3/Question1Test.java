@@ -16,8 +16,10 @@ public class Question1Test {
 
     @Test
     public void addsEmptyList() {
-        int result = com.insightfullogic.java8.answers.chapter3.Question1.addUp(Stream.empty());
-        assertEquals(0, result);
+//        int result = com.insightfullogic.java8.answers.chapter3.Question1.addUp(Stream.empty());
+//        assertEquals(0, result);
+        int result = com.insightfullogic.java8.answers.chapter3.MyQuestion1.addUp(Stream.of(1, 2, 3, 4));
+        assertEquals(10, result);
     }
 
     @Test
