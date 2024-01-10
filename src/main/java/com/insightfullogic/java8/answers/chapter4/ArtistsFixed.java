@@ -24,6 +24,8 @@ public class ArtistsFixed {
         Optional<Artist> artist = getArtist(index);
         return artist.map(Artist::getName)
                      .orElse("unknown");
+//        下面语句问题出在：先要把artist映射成string，然后才能用orElse
+//        return artist.orElse("unknown");
     }
 
 }

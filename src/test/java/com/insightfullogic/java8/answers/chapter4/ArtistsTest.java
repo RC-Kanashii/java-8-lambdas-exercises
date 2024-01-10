@@ -32,7 +32,7 @@ public class ArtistsTest {
         String artist = optionalExamples.getArtistName(0);
         Assert.assertEquals("John Coltrane", artist);
     }
-
+ 
     @Test
     public void nameIndexOutsideRange() {
         String artist = optionalExamples.getArtistName(4);
